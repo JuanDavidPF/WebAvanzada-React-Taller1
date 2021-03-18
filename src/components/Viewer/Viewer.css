@@ -1,0 +1,14 @@
+.viewer {
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.viewer>img {
+
+   
+    height: 95%;
+    background-color: rgb(160, 153, 95);
+}

@@ -1,10 +1,13 @@
 import React from "react";
-import { PCViewer } from "../../components/PCViewer/PCViewer";
+import { Viewer } from "../../components/Viewer/Viewer";
+import { DashboardHolder } from "../DashboardsHolder/DashboardHolder";
+import "./App.css";
 
 export const App = () => {
   return (
     <main>
-      <PCViewer></PCViewer>
+      <Viewer></Viewer>
+      <DashboardHolder></DashboardHolder>
     </main>
   );
 }; //cloese App component
