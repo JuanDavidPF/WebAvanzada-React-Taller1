@@ -1,0 +1,48 @@
+.DashboadButton {
+    width: 70px;
+    height: 70px;
+    transform-origin: center;
+
+    background-color: #d1d1d1;
+    cursor: pointer;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgba(255, 255, 255, 0.596);
+    margin: 5px;
+    transition: background-color 0.3s ease-in-out,
+        width 0.2s ease-in-out,
+        height 0.2s ease-in-out,
+        border-color 0.2s ease-in-out;
+
+}
+
+.DashboadButton:hover {
+   
+    border-color: rgb(238, 255, 3);
+    background-color: #a5a5a5;
+}
+.DashboardButton--selected {
+    width: 80px;
+    height: 80px;
+    border-color: rgb(75, 250, 227);
+
+    background-color: #5fb6af;
+}
+
+.DashboardButton--selected:hover {
+    border-color: rgb(75, 250, 227);
+
+    background-color: #5fb6af;
+}
+
+.DashboadButton>img {
+    max-width: 80%;
+    max-height: 70%;
+    object-fit: contain;
+
+}

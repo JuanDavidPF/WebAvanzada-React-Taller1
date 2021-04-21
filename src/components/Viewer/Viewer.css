@@ -1,14 +1,17 @@
 .viewer {
     background-color: brown;
+    flex-basis: 500px;
+    flex-grow: 0;
+    flex-shrink: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
 }
 
 .viewer>img {
-
-   
-    height: 95%;
+    margin: auto;
+    min-width: 600px;
+    max-width: 600px;
     background-color: rgb(160, 153, 95);
 }

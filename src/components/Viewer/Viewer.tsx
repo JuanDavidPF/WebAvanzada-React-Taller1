@@ -1,10 +1,10 @@
 import React, {useState}  from "react";
 import "./Viewer.css";
-import chasis from "./../../resources/images/chasis/test.png"
+
 
 
 export const Viewer = () => {
-  const [imagePath, setImagePath] = useState(chasis);
+  const [imagePath, setImagePath] = useState("/resources/images/chasis/test.png");
   
   return (
     <section className="viewer"> 

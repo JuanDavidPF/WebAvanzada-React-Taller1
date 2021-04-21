@@ -1,0 +1,12 @@
+.cardsHolder {
+    width: 100%;
+  
+    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 0px;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
