@@ -8,32 +8,32 @@ import { DatabaseContext } from "../../utils/contexts/DatabaseContext";
 const PC_Components_Database: ComponentCategory[] = [
   {
     id: "Chassis",
-    iconPath: "/resources/images/icons/chasis_dashboard_icon.png",
+    iconPath: "images/icons/chasis_dashboard_icon.png",
     references: [{}, {}],
     selected: true,
   },
 
   {
     id: "CPUs",
-    iconPath: "/resources/images/icons/chasis_dashboard_icon.png",
+    iconPath: "images/icons/chasis_dashboard_icon.png",
     references: [{}, {}],
   },
 
   {
     id: "GPUs",
-    iconPath: "/resources/images/icons/chasis_dashboard_icon.png",
+    iconPath: "images/icons/chasis_dashboard_icon.png",
     references: [{}, {}],
   },
 
   {
     id: "Motherboards",
-    iconPath: "/resources/images/icons/chasis_dashboard_icon.png",
+    iconPath: "images/icons/chasis_dashboard_icon.png",
     references: [{}, {}],
   },
 
   {
     id: "RAMs",
-    iconPath: "/resources/images/icons/ram_dashboard_icon.png",
+    iconPath: "images/icons/ram_dashboard_icon.png",
     references: [{}, {}],
   },
 ]; //Closes Database declaration
@@ -44,7 +44,6 @@ export const App = () => {
   );
 
   const HandleDatabaseUpdate = (updatedDatabase: ComponentCategory[]) => {
-
     setPC_Components(updatedDatabase);
   };
 

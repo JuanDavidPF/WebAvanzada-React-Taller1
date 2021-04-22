@@ -1,4 +1,6 @@
 import React from "react";
+import { getOriginalNode } from "typescript";
+import { getImageSrc } from "../../utils/functions/getImageSrc";
 import "./DashboardButton.css";
 
 interface DashboadButtonProps {
@@ -27,8 +29,8 @@ export const DashboardButton: React.FC<DashboadButtonProps> = ({
     >
       <img
         src={
-          iconImagePath ||
-          "/resources/images/icons/undefined_dashboard_icon.png"
+          (iconImagePath && getImageSrc(iconImagePath)) ||
+          getImageSrc("images/icons/undefined_dashboard_icon.png")
         }
         alt="Dashboard Icon"
       />

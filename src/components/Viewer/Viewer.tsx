@@ -1,14 +1,15 @@
-import React, {useState}  from "react";
+import React, { useState } from "react";
+import { getImageSrc } from "../../utils/functions/getImageSrc";
 import "./Viewer.css";
 
-
-
 export const Viewer = () => {
-  const [imagePath, setImagePath] = useState("/resources/images/chasis/test.png");
-  
+  const [imagePath, setImagePath] = useState(
+    getImageSrc("images/chasis/test.png")
+  );
+
   return (
-    <section className="viewer"> 
-      <img src={imagePath} alt="chasis" />  
+    <section className="viewer">
+      <img src={imagePath} alt="chasis" />
     </section>
   );
-}; //cloese PCViewer component
+}; //cloese Viewer component
