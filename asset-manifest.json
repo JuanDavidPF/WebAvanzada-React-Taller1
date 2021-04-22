@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/WebAvanzada-React-Taller1/static/css/main.a0745d5a.chunk.css",
+    "main.js": "/WebAvanzada-React-Taller1/static/js/main.fb72bc45.chunk.js",
+    "main.js.map": "/WebAvanzada-React-Taller1/static/js/main.fb72bc45.chunk.js.map",
+    "runtime-main.js": "/WebAvanzada-React-Taller1/static/js/runtime-main.e3537bf9.js",
+    "runtime-main.js.map": "/WebAvanzada-React-Taller1/static/js/runtime-main.e3537bf9.js.map",
+    "static/js/2.46076cde.chunk.js": "/WebAvanzada-React-Taller1/static/js/2.46076cde.chunk.js",
+    "static/js/2.46076cde.chunk.js.map": "/WebAvanzada-React-Taller1/static/js/2.46076cde.chunk.js.map",
+    "index.html": "/WebAvanzada-React-Taller1/index.html",
+    "static/css/main.a0745d5a.chunk.css.map": "/WebAvanzada-React-Taller1/static/css/main.a0745d5a.chunk.css.map",
+    "static/js/2.46076cde.chunk.js.LICENSE.txt": "/WebAvanzada-React-Taller1/static/js/2.46076cde.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e3537bf9.js",
+    "static/js/2.46076cde.chunk.js",
+    "static/css/main.a0745d5a.chunk.css",
+    "static/js/main.fb72bc45.chunk.js"
+  ]
+}
