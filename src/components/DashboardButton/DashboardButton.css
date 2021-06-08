@@ -2,7 +2,7 @@
     width: 70px;
     height: 70px;
     transform-origin: center;
-
+    user-select: none;
     background-color: #d1d1d1;
     cursor: pointer;
     display: flex;

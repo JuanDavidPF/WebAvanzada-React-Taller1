@@ -24,7 +24,7 @@ export const DashboardButton: React.FC<DashboadButtonProps> = ({
       }`}
       onClick={handleClickedTab}
     >
-      <img src={getTabIconSrc(localTab)} alt="Dashboard Icon" />
+      <img draggable={false} src={getTabIconSrc(localTab)} alt="Dashboard Icon" />
     </div>
   );
 };
