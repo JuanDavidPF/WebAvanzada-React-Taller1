@@ -1,60 +1,18 @@
-import { Viewer } from "../../components/Viewer/Viewer";
-import { ComponentCategory } from "../../utils/interfaces/ComponentCategory";
-import React from "react";
-import { DashboardHolder } from "../DashboardsHolder/DashboardHolder";
+import React, { useState } from "react";
 import "./App.css";
+
+import { Viewer } from "../../components/Viewer/Viewer";
+import { DashboardHolder } from "../DashboardsHolder/DashboardHolder";
 import { DatabaseContext } from "../../utils/contexts/DatabaseContext";
-
-const PC_Components_Database: ComponentCategory[] = [
-  {
-    id: "Chassis",
-    iconPath: "images/icons/chasis_dashboard_icon.png",
-    references: [{}, {}],
-    selected: true,
-  },
-
-  {
-    id: "CPUs",
-    iconPath: "images/icons/chasis_dashboard_icon.png",
-    references: [{}, {}],
-  },
-
-  {
-    id: "GPUs",
-    iconPath: "images/icons/chasis_dashboard_icon.png",
-    references: [{}, {}],
-  },
-
-  {
-    id: "Motherboards",
-    iconPath: "images/icons/chasis_dashboard_icon.png",
-    references: [{}, {}],
-  },
-
-  {
-    id: "RAMs",
-    iconPath: "images/icons/ram_dashboard_icon.png",
-    references: [{}, {}],
-  },
-]; //Closes Database declaration
+import { Database } from "../../utils/databases/Database";
 
 export const App = () => {
-  const [PC_Components, setPC_Components] = React.useState(
-    PC_Components_Database
-  );
-
-  const HandleDatabaseUpdate = (updatedDatabase: ComponentCategory[]) => {
-    setPC_Components(updatedDatabase);
-  };
-
   return (
-    <main>
-      <DatabaseContext.Provider
-        value={{ database: PC_Components, setDatabase: setPC_Components }}
-      >
+    <DatabaseContext.Provider value={Database}>
+      <main>
         <Viewer></Viewer>
         <DashboardHolder></DashboardHolder>
-      </DatabaseContext.Provider>
-    </main>
+      </main>
+    </DatabaseContext.Provider>
   );
 }; //cloese App component

@@ -1,39 +1,30 @@
-import React from "react";
-import { getOriginalNode } from "typescript";
-import { getImageSrc } from "../../utils/functions/getImageSrc";
+import React, { useContext } from "react";
+import { TabContext } from "../../utils/contexts/TabContext";
+
+import { TabType } from "../../utils/interfaces/TabType";
+import { getTabIconSrc } from "../../utils/functions/getTabIconSrc";
+
 import "./DashboardButton.css";
 
 interface DashboadButtonProps {
-  iconImagePath?: string;
-  selected?: boolean;
-  id: string;
-  ButtonClickHandler: (id: string) => void;
+  localTab: TabType;
 }
 
 export const DashboardButton: React.FC<DashboadButtonProps> = ({
-  iconImagePath,
-  selected,
-  id,
-  ButtonClickHandler,
+  localTab,
 }) => {
-  const ButtonClicked = () => {
-    ButtonClickHandler(id);
-  };
+
+  const { tab, setTab } = useContext(TabContext);
+  const handleClickedTab = () => setTab(localTab);
 
   return (
     <div
-      className={`DashboadButton ${
-        selected ? "DashboardButton--selected" : ""
+      className={`DashboadButton${
+        tab === localTab ? " DashboardButton--selected" : ""
       }`}
-      onClick={ButtonClicked}
+      onClick={handleClickedTab}
     >
-      <img
-        src={
-          (iconImagePath && getImageSrc(iconImagePath)) ||
-          getImageSrc("images/icons/undefined_dashboard_icon.png")
-        }
-        alt="Dashboard Icon"
-      />
+      <img src={getTabIconSrc(localTab)} alt="Dashboard Icon" />
     </div>
   );
 };

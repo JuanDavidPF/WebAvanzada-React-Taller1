@@ -1,8 +1,4 @@
 import { createContext } from "react";
-import { ComponentCategory } from "../interfaces/ComponentCategory";
+import { DatabaseType } from "../interfaces/DatabaseType";
 
-export const DatabaseContext = createContext({
-  database: [] as ComponentCategory[],
-
-  setDatabase: (updatedDatabase: ComponentCategory[]) => {},
-});
+export const DatabaseContext = createContext({} as DatabaseType);
