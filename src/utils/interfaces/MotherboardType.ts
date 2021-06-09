@@ -1,19 +1,26 @@
-import { CPUType  } from "./CPUType";
-import { GPUType  } from "./GPUType";
-import { HDDType  } from "./HDDType";
-import { RAMType  } from "./RAMType";
+import { CPUType } from "./CPUType";
+import { GPUType } from "./GPUType";
+import { HDDType } from "./HDDType";
+import { RAMTechType } from "./RAMTech";
+import { RAMType } from "./RAMType";
 
-export interface MotherboardType  {
+export interface MotherboardType {
+  price: number;
   brand: string;
   reference: string;
-  socket: string;
-  memorySupportTechnology: "SDR" | "DDR" | "DDR2" | "DDR3" | "DDR4" | "DDR5";
-  MHz: number;
-  RAMSlotsAmount: number;
-  GPUSlotsAmount: number;
+  chipset: string;
 
-  CPU?: CPUType ;
-  GPUS?: GPUType [];
-  RAMS?: RAMType [];
-  HDDS?: HDDType [];
+  memorySupportTechnology: RAMTechType;
+  size: "EATX" | "ATX" | "micro-ATX" | "mini-ITX";
+
+  HDDSlostAmount: number;
+  RAMSlotsAmount: number;
+  PCIeSlotsAmount: number;
+
+  thumbnailImg?: string;
+  viewerImg?: string;
+  CPU?: CPUType;
+  GPUS?: GPUType[];
+  RAMS?: RAMType[];
+  HDDS?: HDDType[];
 } //closes MotherboardType interface declaration

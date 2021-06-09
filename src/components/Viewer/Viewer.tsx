@@ -4,7 +4,7 @@ import "./Viewer.css";
 
 export const Viewer = () => {
   const [imagePath, setImagePath] = useState(
-    getImageSrc("images/chasis/test.png")
+    getImageSrc("images/chassis/test.png")
   );
 
   return (

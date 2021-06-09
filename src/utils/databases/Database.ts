@@ -8,7 +8,7 @@ import { RAMDatabase } from "./RAMDatabase";
 
 export const Database: DatabaseType = {
   Chassis: ChassisDatabase,
-  Motherboads: MotherboardsDatabase,
+  Motherboards: MotherboardsDatabase,
   CPUs: CPUDatabase,
   GPUs: GPUDatabase,
   RAMs: RAMDatabase,

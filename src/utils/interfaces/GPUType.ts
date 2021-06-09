@@ -5,7 +5,8 @@ export interface GPUType {
   clockFrecuency: number;
   GDDR: string;
   VRAM: "4GB" | "6GB" | "8GB" | "12GB" | "16GB";
-  
+  thumbnailImg?:string;
+  viewerImg?:string;
   technologies:
     | "Nvidia G-Sync"
     | "Nvidia DLSS"

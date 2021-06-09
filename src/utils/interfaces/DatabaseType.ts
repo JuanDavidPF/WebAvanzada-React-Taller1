@@ -6,7 +6,7 @@ import { MotherboardType } from "./MotherboardType";
 import { RAMType } from "./RAMType";
 
 export interface DatabaseType {
-  Motherboads?: MotherboardType[];
+  Motherboards?: MotherboardType[];
   CPUs?: CPUType[];
   GPUs?: GPUType[];
   RAMs?: RAMType[];
