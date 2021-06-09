@@ -1,11 +1,19 @@
 .cardsHolder {
-    width: 100%;
-  
-    background-color: blue;
+
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around;      
+    align-items:flex-start;
     flex-wrap: wrap;
+
+    gap: 30px;
     padding: 40px 0px;
+
+    width: 100%;
+    height: 100%;
+  
+    background-color: rgb(59, 59, 59);
+
+
     overflow: scroll;
     overflow-x: hidden;
 

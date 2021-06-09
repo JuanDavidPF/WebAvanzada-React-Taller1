@@ -1,6 +1,6 @@
 import React from "react";
-import { CardsHolder } from "../../components/CardsHolder/CardsHolder";
-import { DashboardButtonsHolder } from "../../components/DashboardButtonsHolder/DashboardButtonsHolder";
+import { CardsHolder } from "../CardsHolder/CardsHolder";
+import { DashboardButtonsHolder } from "../DashboardButtonsHolder/DashboardButtonsHolder";
 import { TabContext } from "../../utils/contexts/TabContext";
 import { TabType } from "../../utils/interfaces/TabType";
 

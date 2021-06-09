@@ -1,5 +1,13 @@
 import "./Card.css";
 
-export const Card = () => {
-  return <div className="card"></div>;
+interface CardProps {
+  thumbnailUrl?: string;
+}
+
+export const Card: React.FC<CardProps> = ({thumbnailUrl}) => {
+  return (
+    <div className="card">
+      <img draggable={false} src={thumbnailUrl || ""} alt="" />
+    </div>
+  );
 }; //cloese Card component

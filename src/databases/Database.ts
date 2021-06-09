@@ -1,4 +1,4 @@
-import { DatabaseType } from "../interfaces/DatabaseType";
+import { DatabaseType } from "../utils/interfaces/DatabaseType";
 import { ChassisDatabase } from "./ChassisDatabase";
 import { CPUDatabase } from "./CPUDatabase";
 import { GPUDatabase } from "./GPUDatabase";

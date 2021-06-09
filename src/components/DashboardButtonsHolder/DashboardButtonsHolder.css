@@ -6,7 +6,10 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: tomato;
+    background-color: rgb(27, 27, 27);
+    z-index: 20;
+   
+    box-shadow: rgba(0, 0, 0, 0.479) 0px 10px 35px 0px;
     padding: 15px 5px;
 
 }

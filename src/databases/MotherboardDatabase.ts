@@ -1,4 +1,4 @@
-import { MotherboardType } from "../interfaces/MotherboardType";
+import { MotherboardType } from "../utils/interfaces/MotherboardType";
 
 export const MotherboardsDatabase: MotherboardType[] = [
   {

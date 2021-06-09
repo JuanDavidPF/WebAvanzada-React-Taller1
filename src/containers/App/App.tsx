@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./App.css";
 
 import { DatabaseContext } from "../../utils/contexts/DatabaseContext";
-import { Database } from "../../utils/databases/Database";
-import { PCEditor } from "../../components/PCEditor/PCEditor";
+import { Database } from "../../databases/Database";
+import { PCEditor } from "../PCEditor/PCEditor";
 
 export const App = () => {
   return (

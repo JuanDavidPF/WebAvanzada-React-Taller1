@@ -1,4 +1,4 @@
-import { CPUType } from "../interfaces/CPUType";
+import { CPUType } from "../utils/interfaces/CPUType";
 
 export const CPUDatabase: CPUType[] = [
   {

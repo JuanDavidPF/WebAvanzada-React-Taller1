@@ -1,5 +1,5 @@
-import { DashboardHolder } from "../../containers/DashboardsHolder/DashboardHolder";
-import { Viewer } from "../Viewer/Viewer";
+import { DashboardHolder } from "../../components/DashboardsHolder/DashboardHolder";
+import { Viewer } from "../../components/Viewer/Viewer";
 import "./PCEditor.css";
 
 export const PCEditor = () => {
