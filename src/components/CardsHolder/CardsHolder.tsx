@@ -38,8 +38,8 @@ export const CardsHolder = () => {
       case "GPUs":
         return (
           db.GPUs &&
-          db.GPUs.map((elem) => {
-            return <Card></Card>;
+          db.GPUs.map((gpu) => {
+            return <Card thumbnailUrl={gpu.thumbnailImg}></Card>;
           })
         );
       /*
@@ -48,8 +48,8 @@ export const CardsHolder = () => {
       case "RAMs":
         return (
           db.RAMs &&
-          db.RAMs.map((elem) => {
-            return <Card></Card>;
+          db.RAMs.map((ram) => {
+            return <Card thumbnailUrl={ram.thumbnailImg}></Card>;
           })
         );
       /*
@@ -58,8 +58,8 @@ export const CardsHolder = () => {
       case "HDDs":
         return (
           db.HDDs &&
-          db.HDDs.map((elem) => {
-            return <Card></Card>;
+          db.HDDs.map((hdd) => {
+            return <Card thumbnailUrl={hdd.thumbnailImg}></Card>;
           })
         );
       /*
@@ -68,8 +68,8 @@ export const CardsHolder = () => {
       case "Chassis":
         return (
           db.Chassis &&
-          db.Chassis.map((elem) => {
-            return <Card></Card>;
+          db.Chassis.map((chassis) => {
+            return <Card thumbnailUrl={chassis.thumbnailImg}></Card>;
           })
         );
     } //closes Switch on Tab

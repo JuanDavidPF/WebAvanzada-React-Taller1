@@ -1,14 +1,13 @@
 import { RAMTechType } from "./RAMTech";
 
-export interface RAMType  {
+export interface RAMType {
   brand: string;
   reference: string;
   price: number;
-  capacity: "1GB" | "2GB" | "4GB" | "8GB" | "16GB" | "32GB";
+  capacity: 1 | 2 | 4 | 8 | 16 | 32| 64;
+  amount: 1 | 2 | 4| 8;
   technology: RAMTechType;
-  ns: number;
   MHz: number;
-  CL: number;
-  thumbnailImg?:string;
-  viewerImg?:string;
+  thumbnailImg?: string;
+  viewerImg?: string;
 } //closes RAMType interface declaration

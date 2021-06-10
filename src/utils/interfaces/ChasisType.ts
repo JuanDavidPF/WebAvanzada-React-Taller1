@@ -1,7 +1,7 @@
 export interface ChasisType {
-
-  integratedLighting: boolean;
-  thumbnailImg?:string;
-  viewerImg?:string;
-  size: "Full-Tower" | "Mid-Tower" | "Mini-Tower" | "SFF";
+  brand:string;
+  reference:string;
+  price: number;
+  thumbnailImg?: string;
+  viewerImg?: string;
 } //closes ChasisType interface declaration
