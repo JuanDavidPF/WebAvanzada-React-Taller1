@@ -15,9 +15,11 @@ export const getTabIconSrc = (tab: TabType) => {
       break;
 
     case "CPUs":
+      icon = "cpu_dashboard_icon.png";
       break;
 
     case "GPUs":
+      icon = "gpu_dashboard_icon.png";
       break;
 
     case "RAMs":
@@ -25,6 +27,7 @@ export const getTabIconSrc = (tab: TabType) => {
       break;
 
     case "HDDs":
+      icon = "hdd_dashboard_icon.png";
       break;
   }
 

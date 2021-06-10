@@ -1,13 +1,32 @@
 .viewer {
-    background-color: brown;
+    background-color: rgb(34, 34, 34);
 
     flex-basis: 500px;
     flex-grow: 1;
     flex-shrink: 0;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
 
+    min-height: 800px;
+}
+
+.viewer>div {
+    width: 100%;
+    height: 75px;
+    background-color: rgba(255, 2, 2, 0.788);
+    display: flex;
+    padding: 0 40px;
+    align-items: center;
+}
+
+.viewer>div>h1 {
+
+    width: fit-content;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    font-weight: 100;
+    font-size: 35px;
 }
 
 .viewer>img {
