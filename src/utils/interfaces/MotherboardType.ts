@@ -17,7 +17,7 @@ export interface MotherboardType {
   RAMSlotsAmount: number;
   PCIeSlotsAmount: number;
 
-  thumbnailImg?: string;
+  thumbnailImg: string;
   viewerImg?: string;
   CPU?: CPUType;
   GPUS?: GPUType[];

@@ -1,8 +1,8 @@
 export interface HDDType {
   brand: string;
-  refecence: string;
+  reference: string;
   price: number;
   capacity: number;
-  thumbnailImg?: string;
+  thumbnailImg: string;
   viewerImg?: string;
 } //closes HDDType interface declaration

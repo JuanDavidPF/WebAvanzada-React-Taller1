@@ -2,6 +2,6 @@ export interface ChasisType {
   brand:string;
   reference:string;
   price: number;
-  thumbnailImg?: string;
+  thumbnailImg: string;
   viewerImg?: string;
 } //closes ChasisType interface declaration

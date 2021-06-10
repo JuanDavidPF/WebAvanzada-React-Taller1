@@ -8,7 +8,7 @@ export interface CPUType  {
   cores: number;
   threads: number;
   TDP?: number;
-  thumbnailImg?:string;
+  thumbnailImg: string;
   viewerImg?:string;
 
 } //closes CPU interface declaration

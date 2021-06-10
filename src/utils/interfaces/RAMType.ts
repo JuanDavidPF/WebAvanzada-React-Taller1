@@ -8,6 +8,6 @@ export interface RAMType {
   amount: 1 | 2 | 4| 8;
   technology: RAMTechType;
   MHz: number;
-  thumbnailImg?: string;
+  thumbnailImg: string;
   viewerImg?: string;
 } //closes RAMType interface declaration
